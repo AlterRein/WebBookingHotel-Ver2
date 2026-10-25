@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <script>
         if (sessionStorage.getItem("isLoggedIn") !== "true") {
         window.location.href = "index.html";
     }
     </script>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookingHotel/MainPage</title>
 </head>
@@ -19,9 +19,10 @@
     <main>
         <nav aria-label="Menu utama">
             <ul>
-                <li><a href="">Booking kamar</a></li>
-                <li><a href="">Tiket/Kunci kamar</a></li>
-                <li><a href="">Pembayaran</a></li>
+                <li><a href="booking.html">Booking kamar</a></li>
+                <li><a href="tiket.html">Tiket/Kunci kamar</a></li>
+                <li><a href="pay.html">Pembayaran</a></li>
+                <li><a href="index.html">Kembali</a></li>
             </ul>
         </nav>
 
