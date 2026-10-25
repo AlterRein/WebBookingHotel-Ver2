@@ -10,5 +10,5 @@ document.getElementById("RegistrasiForm").addEventListener("submit", function(ev
     localStorage.setItem("savedPassword", password);
 
     alert("Registrasi Berhasil! Silakan login dengan akun Anda.");
-    window.location.href = "auth.html";
+    window.location.href = "index.html";
 });
