@@ -4,7 +4,7 @@ document.getElementById("LoginForm").addEventListener("submit", function(event) 
 
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    
+
     //ambil data user dari localStorage
     const registeredUser = localStorage.getItem('savedUsername');
     const registeredPass = localStorage.getItem('savedPassword');
