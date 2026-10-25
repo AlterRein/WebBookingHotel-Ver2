@@ -2,14 +2,23 @@
 document.getElementById("LoginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    
+    //ambil data user dari localStorage
+    const registeredUser = localStorage.getItem('savedUsername');
+    const registeredPass = localStorage.getItem('savedPassword');
+    
+    if (!registerUser) {
+        alert("Akun tidak valid, silahkan registrasi lebih dulu.")
+        window.location.href = "regis.html";
+        return;
+    }
 
-    if (username === "admin" && password === "admin123") {
-        window.location.href = "main.html";
+    if (usernameInput === registeredUser && passwordInput === registeredPass) {
+        alert("Login berhasil!")
+        window.location.href = "main.html"
     } else {
-        alert("Username atau password salah!");
+        alert("Username atau Password salah!")
     }
 });
-
-
