@@ -15,6 +15,7 @@ document.getElementById("LoginForm").addEventListener("submit", function(event) 
 
     if (username === registeredUser && password === registeredPass) {
         alert("Login berhasil!");
+        //ini buat ngecek user udah pernah login atau belum
         sessionStorage.setItem("isLoggedIn", "true");
         window.location.href = "main.html";
     } else {
